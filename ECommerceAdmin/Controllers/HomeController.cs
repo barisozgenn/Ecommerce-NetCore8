@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using EcommerceAdmin.Models;
+using ECommerceAdmin.Models;
 
-namespace EcommerceAdmin.Controllers;
+namespace ECommerceAdmin.Controllers;
 
 public class HomeController : Controller
 {

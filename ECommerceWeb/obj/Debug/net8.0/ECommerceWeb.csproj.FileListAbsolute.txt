@@ -23,3 +23,4 @@
 /Users/barisozgen/Documents/Projeler/barboda-PreProjeler/EcommerceNetCore8/ECommerceWeb/obj/Debug/net8.0/ECommerceWeb.pdb
 /Users/barisozgen/Documents/Projeler/barboda-PreProjeler/EcommerceNetCore8/ECommerceWeb/obj/Debug/net8.0/ECommerceWeb.genruntimeconfig.cache
 /Users/barisozgen/Documents/Projeler/barboda-PreProjeler/EcommerceNetCore8/ECommerceWeb/obj/Debug/net8.0/ref/ECommerceWeb.dll
+/Users/barisozgen/Documents/Projeler/barboda-PreProjeler/EcommerceNetCore8/ECommerceWeb/obj/Debug/net8.0/ECommerceWeb.sourcelink.json
