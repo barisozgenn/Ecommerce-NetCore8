@@ -6,7 +6,8 @@ namespace DataAccess.Repositories.Admin
 {
 	public interface IAdminUserDal : IEntityRepository<AdminUser>
     {
-	}
+        List<AdminRole> GetAdminRoles(int userId);
+    }
     /*public interface IAdminUserDal
     {
         void Add(AdminUser adminUser);
