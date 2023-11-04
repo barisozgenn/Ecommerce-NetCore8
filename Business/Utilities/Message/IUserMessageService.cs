@@ -4,6 +4,7 @@ namespace Business.Utilities.Message
     public interface IUserMessageService
     {
         string GetEmailRequired(string languageKey);
+        string GetEmailIsNotValid(string languageKey);
         string GetPhoneRequired(string languageKey);
         string GetUsernameRequired(string languageKey);
         string GetPasswordRequired(string languageKey);
@@ -35,6 +36,12 @@ namespace Business.Utilities.Message
         string GetPhoneNumberUpdated(string languageKey);
         string GetAccountSuspendedDueToViolation(string languageKey);
         string GetAccountClosed(string languageKey);
+        string PasswordRequired(string languageKey);
+        string PasswordMinLength(string languageKey);
+        string PasswordUppercase(string languageKey);
+        string PasswordLowercase(string languageKey);
+        string PasswordNumber(string languageKey);
+        string PasswordSpecialCharacter(string languageKey);
     }
 }
 

@@ -21,6 +21,17 @@
     <None Remove="Aspects\" />
     <None Remove="Utilities\Message\" />
     <None Remove="Aspects\Secured\" />
+    <None Remove="Managers\Admin\" />
+    <None Remove="Managers\Product\" />
+    <None Remove="Managers\User\" />
+    <None Remove="Services\Admin\" />
+    <None Remove="Services\Product\" />
+    <None Remove="Services\User\" />
+    <None Remove="Utilities\Constants\" />
+    <None Remove="Validators\FluentValidation\" />
+    <None Remove="Validators\FluentValidation\Admin\" />
+    <None Remove="Validators\FluentValidation\Product\" />
+    <None Remove="Validators\FluentValidation\User\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Utilities\" />
@@ -33,6 +44,17 @@
     <Folder Include="Aspects\" />
     <Folder Include="Utilities\Message\" />
     <Folder Include="Aspects\Secured\" />
+    <Folder Include="Managers\Admin\" />
+    <Folder Include="Managers\Product\" />
+    <Folder Include="Managers\User\" />
+    <Folder Include="Services\Admin\" />
+    <Folder Include="Services\Product\" />
+    <Folder Include="Services\User\" />
+    <Folder Include="Utilities\Constants\" />
+    <Folder Include="Validators\FluentValidation\" />
+    <Folder Include="Validators\FluentValidation\Admin\" />
+    <Folder Include="Validators\FluentValidation\Product\" />
+    <Folder Include="Validators\FluentValidation\User\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />

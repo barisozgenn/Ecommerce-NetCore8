@@ -9,6 +9,12 @@ namespace Business.Utilities.Message
         { "tr", "E-posta zorunludur!" }
     }[languageKey];
 
+        public string GetEmailIsNotValid(string languageKey) => new Dictionary<string, string>
+    {
+        { "en", "Email is not valid!" },
+        { "tr", "E-posta geçerli formatta değil!" }
+    }[languageKey];
+
         public string GetPhoneRequired(string languageKey) => new Dictionary<string, string>
     {
         { "en", "Phone number is required!" },
@@ -193,6 +199,37 @@ namespace Business.Utilities.Message
     {
         { "en", "Account is closed." },
         { "tr", "Hesap kapatıldı." }
+    }[languageKey];
+
+        public string PasswordRequired(string languageKey) => new Dictionary<string, string>
+    {
+        { "en", "Password is required!" },
+    { "tr", "Şifre gereklidir!" }
+    }[languageKey];
+        public string PasswordMinLength(string languageKey) => new Dictionary<string, string>
+    {
+        { "en", "Password must be minimum 6 characters!" },
+    { "tr", "Şifre en az 6 karakter olmalıdır!" }
+    }[languageKey];
+        public string PasswordUppercase(string languageKey) => new Dictionary<string, string>
+    {
+        { "en", "Password must contain an Uppercase letter!" },
+    { "tr", "Şifre büyük harf içermelidir!" }
+    }[languageKey];
+        public string PasswordLowercase(string languageKey) => new Dictionary<string, string>
+    {
+         { "en", "Password must contain a lower case letter!" },
+    { "tr", "Şifre küçük harf içermelidir!" }
+    }[languageKey];
+        public string PasswordNumber(string languageKey) => new Dictionary<string, string>
+    {
+         { "en", "Password must contain a number!" },
+    { "tr", "Şifre bir rakam içermelidir!" }
+    }[languageKey];
+        public string PasswordSpecialCharacter(string languageKey) => new Dictionary<string, string>
+    {
+         { "en", "Password must contain a special character!" },
+    { "tr", "Şifre özel bir karakter içermelidir!" }
     }[languageKey];
     }
 

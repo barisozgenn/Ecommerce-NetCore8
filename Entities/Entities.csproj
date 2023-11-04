@@ -12,6 +12,10 @@
     <None Remove="Concrete\User\" />
     <None Remove="Concrete\Product\" />
     <None Remove="Enums\" />
+    <None Remove="DTOs\" />
+    <None Remove="DTOs\Admin\" />
+    <None Remove="DTOs\Product\" />
+    <None Remove="DTOs\User\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Concrete\" />
@@ -19,5 +23,12 @@
     <Folder Include="Concrete\User\" />
     <Folder Include="Concrete\Product\" />
     <Folder Include="Enums\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="DTOs\Admin\" />
+    <Folder Include="DTOs\Product\" />
+    <Folder Include="DTOs\User\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
   </ItemGroup>
 </Project>
