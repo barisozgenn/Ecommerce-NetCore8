@@ -20,6 +20,7 @@
     <None Remove="Authentication\" />
     <None Remove="Aspects\" />
     <None Remove="Utilities\Message\" />
+    <None Remove="Aspects\Secured\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Utilities\" />
@@ -31,8 +32,12 @@
     <Folder Include="Authentication\" />
     <Folder Include="Aspects\" />
     <Folder Include="Utilities\Message\" />
+    <Folder Include="Aspects\Secured\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Autofac" Version="7.1.0" />
+    <PackageReference Include="Autofac.Extras.DynamicProxy" Version="7.1.0" />
+    <PackageReference Include="FluentValidation" Version="11.8.0" />
   </ItemGroup>
 </Project>
