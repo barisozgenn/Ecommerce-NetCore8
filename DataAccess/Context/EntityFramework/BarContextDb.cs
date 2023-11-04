@@ -4,7 +4,7 @@ using Entities.Concrete.Product;
 using Entities.Concrete.User;
 using Microsoft.EntityFrameworkCore;
 
-namespace DataAccess.Concrete.EntityFramework
+namespace DataAccess.Context.EntityFramework
 {
     public class BarContextDb : DbContext //dbcontext inhereted 
     {

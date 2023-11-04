@@ -10,14 +10,21 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.13" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Concrete\" />
-    <None Remove="Concrete\EntityFramework\" />
+    <None Remove="Context\" />
+    <None Remove="Repositories\" />
+    <None Remove="Repositories\Admin\" />
+    <None Remove="Repositories\Product\" />
+    <None Remove="Repositories\User\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Concrete\" />
-    <Folder Include="Concrete\EntityFramework\" />
+    <Folder Include="Context\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Repositories\Admin\" />
+    <Folder Include="Repositories\Product\" />
+    <Folder Include="Repositories\User\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entities\Entities.csproj" />
+    <ProjectReference Include="..\Core\Core.csproj" />
   </ItemGroup>
 </Project>
