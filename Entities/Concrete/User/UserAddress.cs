@@ -4,7 +4,7 @@ namespace Entities.Concrete.User
     public class UserAddress
     {
         public int Id { get; set; }
-        public int UserId { get; set; }
+        public required int UserId { get; set; }
         public required string Country { get; set; }
         public string? State { get; set; }
         public required string City { get; set; }

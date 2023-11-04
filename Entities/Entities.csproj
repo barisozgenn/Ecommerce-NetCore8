@@ -11,11 +11,13 @@
     <None Remove="Concrete\Admin\" />
     <None Remove="Concrete\User\" />
     <None Remove="Concrete\Product\" />
+    <None Remove="Enums\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Concrete\" />
     <Folder Include="Concrete\Admin\" />
     <Folder Include="Concrete\User\" />
     <Folder Include="Concrete\Product\" />
+    <Folder Include="Enums\" />
   </ItemGroup>
 </Project>

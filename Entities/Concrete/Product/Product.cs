@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Entities.Enums;
 
 namespace Entities.Concrete.Product
 {
@@ -32,6 +33,9 @@ namespace Entities.Concrete.Product
 
         // A collection of video URLs for the product
         public List<string>? VideoUrls { get; set; }
+
+      
+        public required List<PaymentMethod> AvailablePaymentMethods { get; set; }
 
         public DateTime CreatedDate { get; set; }
         public DateTime UpdatedDate { get; set; }

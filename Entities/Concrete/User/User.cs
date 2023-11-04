@@ -10,9 +10,6 @@ namespace Entities.Concrete.User
         public required byte[] PasswordSalt { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime UpdatedDate { get; set; }
-
-        // Navigation property to link to UserDetail
-        public UserDetail? UserDetail { get; set; }
     }
 }
 

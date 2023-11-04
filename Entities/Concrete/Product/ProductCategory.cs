@@ -11,10 +11,6 @@ namespace Entities.Concrete.Product
         // A dictionary of descriptions in different languages
         public Dictionary<string, string>? Descriptions { get; set; }
         public int? ParentCategoryId { get; set; } // Reference to the parent category
-        // Navigation property to the parent category
-        public ProductCategory? ParentCategory { get; set; }
-        // Navigation property to the subcategories
-        public List<ProductCategory>? SubCategories { get; set; } 
 	}
 }
 

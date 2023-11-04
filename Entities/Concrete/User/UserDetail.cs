@@ -6,7 +6,7 @@ namespace Entities.Concrete.User
 	public class UserDetail
 	{
         public int Id { get; set; }
-        public int UserId { get; set; }
+        public required int UserId { get; set; }
 
         public required string Name { get; set; }
         public required string Surname { get; set; }
@@ -17,11 +17,6 @@ namespace Entities.Concrete.User
 
         public string? PhoneCountryCode { get; set; }
         public string? PhoneNumber { get; set; }
-
-        public List<UserAddress>? Addresses { get; set; }
-
-        // Navigation property to link to User
-        public User? User { get; set; }
     }
 }
 
