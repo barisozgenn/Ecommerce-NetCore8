@@ -20,14 +20,18 @@ namespace Entities.Concrete.Product
         public required PaymentStatus PaymentStatus { get; set; } // Payment status (e.g., Authorized, Captured, Refunded)
         public required PaymentMethod PaymentMethod { get; set; }
 
-        public DateTime OrderDate { get; set; } // Date and time when the order was placed
-        public DateTime UpdatedDate { get; set; } 
-
         public decimal TotalAmount { get; set; } // Total order amount
 
         public string? OrderNotes { get; set; } // Additional notes or comments for the order
 
         public string? InvoiceUrl { get; set; }
+
+        public string? ShippingCompany { get; set; }
+        public string? ShippingTrackId { get; set; }
+        public string? ShippingTrackUrl { get; set; }
+
+        public DateTime OrderDate { get; set; } // Date and time when the order was placed
+        public DateTime UpdatedDate { get; set; }
     }
 }
 

@@ -9,6 +9,5 @@ namespace Entities.Enums
         Refunded,
         Failed
     }
-
 }
 

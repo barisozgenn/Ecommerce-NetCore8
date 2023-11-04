@@ -11,6 +11,8 @@ namespace Entities.Concrete.User
         public required string Name { get; set; }
         public required string Surname { get; set; }
 
+        public int Gender { get; set; }
+
         public string? ImageUrl { get; set; }
 
         public string? Language { get; set; }

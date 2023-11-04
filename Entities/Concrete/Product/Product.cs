@@ -40,6 +40,5 @@ namespace Entities.Concrete.Product
         public DateTime CreatedDate { get; set; }
         public DateTime UpdatedDate { get; set; }
     }
-
 }
 
