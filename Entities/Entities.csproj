@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Concrete\" />
+    <None Remove="Concrete\Admin\" />
+    <None Remove="Concrete\User\" />
+    <None Remove="Concrete\Product\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Concrete\" />
+    <Folder Include="Concrete\Admin\" />
+    <Folder Include="Concrete\User\" />
+    <Folder Include="Concrete\Product\" />
+  </ItemGroup>
+</Project>
