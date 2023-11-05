@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Business.Utilities.Message
 {
-	public class ProductMessageManager: IProductMessageManager
+	public class ProductMessageManager: IProductMessageService
     {
         public string GetProductAdded(string languageKey) => new Dictionary<string, string>
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Business.Utilities.Message
 {
-    public interface IProductMessageManager
+    public interface IProductMessageService
     {
         string GetProductAdded(string languageKey);
         string GetProductUpdated(string languageKey);

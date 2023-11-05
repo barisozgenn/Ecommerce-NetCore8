@@ -17,7 +17,6 @@
     <None Remove="Managers\" />
     <None Remove="Services\" />
     <None Remove="DependencyResolver\" />
-    <None Remove="Authentication\" />
     <None Remove="Aspects\" />
     <None Remove="Utilities\Message\" />
     <None Remove="Aspects\Secured\" />
@@ -32,6 +31,7 @@
     <None Remove="Validators\FluentValidation\Admin\" />
     <None Remove="Validators\FluentValidation\Product\" />
     <None Remove="Validators\FluentValidation\User\" />
+    <None Remove="DependencyResolver\Autofac\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Utilities\" />
@@ -40,7 +40,6 @@
     <Folder Include="Managers\" />
     <Folder Include="Services\" />
     <Folder Include="DependencyResolver\" />
-    <Folder Include="Authentication\" />
     <Folder Include="Aspects\" />
     <Folder Include="Utilities\Message\" />
     <Folder Include="Aspects\Secured\" />
@@ -55,6 +54,7 @@
     <Folder Include="Validators\FluentValidation\Admin\" />
     <Folder Include="Validators\FluentValidation\Product\" />
     <Folder Include="Validators\FluentValidation\User\" />
+    <Folder Include="DependencyResolver\Autofac\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
