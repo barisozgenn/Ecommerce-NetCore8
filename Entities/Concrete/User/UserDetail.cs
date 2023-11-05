@@ -6,10 +6,10 @@ namespace Entities.Concrete.User
 	public class UserDetail
 	{
         public int Id { get; set; }
-        public required int UserId { get; set; }
+        public int UserId { get; set; }
 
-        public required string Name { get; set; }
-        public required string Surname { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
 
         public int Gender { get; set; }
 

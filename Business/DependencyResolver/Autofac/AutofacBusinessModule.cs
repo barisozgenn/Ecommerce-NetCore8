@@ -1,5 +1,6 @@
 ﻿using System;
 using Autofac;
+using Autofac.Extras.DynamicProxy;
 using Business.Managers.Admin;
 using Business.Services.Admin;
 using Business.Utilities.Message;

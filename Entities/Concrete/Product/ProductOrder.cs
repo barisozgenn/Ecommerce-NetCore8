@@ -9,16 +9,16 @@ namespace Entities.Concrete.Product
 	{
         public int Id { get; set; }
 
-        public required int UserId { get; set; } // Reference to the user who placed the order
+        public int UserId { get; set; } // Reference to the user who placed the order
 
-        public required List<ProductOrderItem> Items { get; set; } // List of items in the order
+        public List<ProductOrderItem>? Items { get; set; } // List of items in the order
 
-        public required UserAddress ShippingAddress { get; set; } // Shipping address for the order
+        public UserAddress? ShippingAddress { get; set; } // Shipping address for the order
 
-        public required ProductOrderStatus OrderStatus { get; set; } // Order status (e.g., Pending, Shipped, Delivered)
+        public ProductOrderStatus OrderStatus { get; set; } // Order status (e.g., Pending, Shipped, Delivered)
 
-        public required PaymentStatus PaymentStatus { get; set; } // Payment status (e.g., Authorized, Captured, Refunded)
-        public required PaymentMethod PaymentMethod { get; set; }
+        public PaymentStatus PaymentStatus { get; set; } // Payment status (e.g., Authorized, Captured, Refunded)
+        public PaymentMethod PaymentMethod { get; set; }
 
         public decimal TotalAmount { get; set; } // Total order amount
 

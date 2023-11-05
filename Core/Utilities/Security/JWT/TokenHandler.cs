@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using Core.Extensions;
 using Entities.Concrete;
+using Entities.Concrete.Admin;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
