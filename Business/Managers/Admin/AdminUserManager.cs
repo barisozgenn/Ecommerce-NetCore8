@@ -72,7 +72,8 @@ namespace Business.Managers.Admin
         }
 
         [ValidationAspect(typeof(AdminUserValidator))]
-        [TransactionAspect()]//eğer bu yapıda bir hata olursa tüm işlemleri geri alır
+        [TransactionAspect()]//eğer bu yapıda bir hata olursa tüm işlemleri geri alır örneğin;
+        //kullanıcı sepete ürün ekledi > stok kontrolü yaptı > ödedi - mesela sotok kontrolünde hata olursa sepet işlemini de geri alır
         public IResponse Update(AdminUser adminUser)
         {
             _adminUserDal.Update(entity: adminUser);

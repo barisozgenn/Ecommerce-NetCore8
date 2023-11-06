@@ -2,6 +2,9 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Business.DependencyResolver.Autofac;
+using Core.DependencyResolver;
+using Core.Extensions;
+using Core.Utilities.IoC;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 
@@ -50,6 +53,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     };
 });
 
+//Memory cache için hazırladığımız service tool ları dahil edelim
+builder.Services.AddDependencyResolvers(new ICoreModule[]
+{
+    new CoreModule()
+});
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -71,7 +80,7 @@ app.UseCors("AllowOrigin");//cors ayarlarımızı buraya ekledik
 app.UseHttpsRedirection();
 
 app.UseAuthentication();//Token var mı yok mu tespit edilir [Authorize(role adı yazılır)]
-app.UseAuthorization();//Erişilmek istenen bölümü görüntülemeye yetkisi var mı yok mu kontrol edilir
+app.UseAuthorization();//Erişilmek istenen bölümü görüntülemeye yetkisi var mı yok mu kontrol edilir, rol kontrolü
 
 app.MapControllers();
 
